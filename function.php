@@ -1,6 +1,6 @@
 <?php
-$user=array();
 
+$user=array();
 
 
 // function show_menu()
@@ -233,11 +233,11 @@ echo "</ul>";
 
 
 function printregister()
- { 
+{ 
  	// include("navbar.php");
 
-   global $user;
-
+	// include("user.txt");
+   
 	
 	
 	if(isset($_POST['submit']))
@@ -259,10 +259,25 @@ function printregister()
 			$value = array('user_id' =>"$user_id",'username' => "$username",        'password' => "$password",'email' => "$email");
 			
 			
-			array_push($user,$value);
-			print_r($user);
+			// array_push($user,$value);
+			// $myfile = fopen("user.txt", "r+") or die("Unable to open file!");
+			// $user = file_get_contents('user.txt');
+			// $user=$value;
+			
+			// $txt=print_r($user,TRUE);
+			
+			// fwrite($myfile, $txt);
+			// print_r($user);
+			// fclose($myfile);
+
+
+
+
 			// header("location:loginpage.php");
 			
+
+
+
 
 			
 		}
@@ -279,7 +294,7 @@ function printcheck()
 {
 	session_start();
 	// include("navbar.php");
-	global $user;
+	
 	$msg="";
 	
 	if(isset($_COOKIE['cookie1']))
@@ -314,7 +329,7 @@ function printcheck()
 				}
 				
 			}
-			print_r($user);
+			// print_r($user);
 			$msg ="username or password incorrect";
 			echo $msg;
 

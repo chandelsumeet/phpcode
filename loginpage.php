@@ -38,37 +38,48 @@ include("function.php");
 <div  class="background-wrapper">
 	<div class="background">
 
-		
 		<div class="img-grid">
 			<div class="img-wrapper">
-				<img src="images/img3.png">
+				<div class="login-img">
+					<div class="img-text">
+						<div><span class="head">XMEE</span></div>
+						<div><span class="head2">Welcome To Our xmee</span></div>
+						<div><span class="text">Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit to the dummy consectetur elit the Lorem Ipsum genera.</span></div>
+						<div class="social-icons">
+							<div><i class="fab fa-google-plus red"></i></div>
+							<div><i class="fab fa-facebook blue"></i></div>
+							<div><i class="fab fa-instagram-square pink"></i></div>
+							<div><i class="fab fa-twitter-square blue"></i></div>
+						</div>
+					</div>
+				</div>
 			</div>
-
 
 			
 
 			<div class="form-wrapper form-login" >
-				<p class="dark f-w6">Enter Username and Password</p>
+				
 				<form class="form-grid" name="" action="" method="post"  >
-				<div class="input-field">
-					<i class="fas fa-user"></i>
-						<input type="text" name="username1" placeholder="enter your name">
+					<div><label>User Name</label></div>
+					<div class="input-field" tabindex="0">
+						
+						<div><i class="fas fa-user"></i></div>
+						<div>
+							<input type="text" name="username1" placeholder="enter your name">
+						</div>
 						
 					</div>
-					<div class="input-field">
-						<i class="fas fa-key"></i>
-						<input type="password" name="password1" placeholder="enter your password">
+					<div><label>Password</label></div>
+					<div class="input-field" tabindex="0">
+						
+						<div><i class="fas fa-key"></i></div>
+						<div><input type="password" name="password1" placeholder="enter your password"></div>
 						
 					</div>
 					<input type="submit" name="login" value="Login" class="btn">
-
+					<div><span class="gray">Don't have an account? <a href="loginpage.php">Register</a></span></div>
 				</form>
-				<div class="social-icons">
-					<div><i class="fab fa-google-plus red"></i></div>
-					<div><i class="fab fa-facebook blue"></i></div>
-					<div><i class="fab fa-instagram-square pink"></i></div>
-					<div><i class="fab fa-twitter-square blue"></i></div>
-				</div>
+				
 				<p><?php printcheck(); ?> </p>
 
 			</div>

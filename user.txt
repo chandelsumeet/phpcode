@@ -1,0 +1,9 @@
+Array
+(
+    [user_id] => 10
+    [username] => aaa
+    [password] => $2y$10$F9YRhOBp2TYFVLRYQTGiieSHVDEOmxliekrbToNANTDoZM1N6hyU6
+    [email] => aaa@gmail.com
+)
+m
+)
